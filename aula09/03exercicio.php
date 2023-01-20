@@ -11,20 +11,29 @@
 <body>
     <div>
         <?php
-            $ano = isset($_GET["ano"]) ? $_GET["ano"] : 1900;
-            $idade = date("Y") - $ano;
-            echo "Você nasceu em $ano e terá $idade anos <br>";
+            $n1 = isset($_GET["n1"]) ? $_GET["n1"] : 0;
+            $n2 = isset($_GET["n2"]) ? $_GET["n2"] : 0;
+            $media = number_format((($n1 + $n2)/2), 2, ",", ".");
 
-            if($idade < 16) {
-                $tipoVoto = "não vota";
-            } elseif ( ($idade >= 16 && $idade < 18 ) || ($idade > 65)  ) {
-                    $tipoVoto = "voto opcional";
-                } else {
-                    $tipoVoto = "voto obrigatório";
-                }
+            if($media < 5) {
+                $situacao = "REPROVADO";
+            } elseif ($media < 7) {
+                $situacao = "RECUPERAÇÃO"                 ;
+            } else{
+                $situacao = "APROVADO";
+            }
 
-            echo "Para esta idade, $tipoVoto";
+            echo "A média entre $n1 e $n2 é igual a $media <br>";
+            echo "Situação do aluno: $situacao<br>";
+
         ?>
+        <input type="button" value="Voltar" onclick="fncVoltar()">
+
     </div>
+    <script>
+        function fncVoltar() {
+            window.location.href = '03exercicio.html'
+        }
+    </script>
 </body>
 </html>
