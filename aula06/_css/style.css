@@ -1,0 +1,19 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-image: url(../imagens/img-fundo.png);
+}
+
+div {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    padding: 10px;
+    background-color: white;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
