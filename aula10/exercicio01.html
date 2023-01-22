@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso básico de PHP</title>
+    <link rel="stylesheet" href="_css/style.css">
+</head>
+<body>
+    <div>
+        <form action="exercicio01.php" method="get">
+
+            <label for="num">Digite um número:</label>
+            <input type="number" name="num"><br>
+
+            <fieldset> <legend>Escolha uma opção:</legend>
+                <label for="idobro">Dobro: </label>
+                <input type="radio" name="calc" id="idobro" value="dobro" checked> | 
+                <label for="iraiz">Raiz quadrada: </label>
+                <input type="radio" name="calc" id="iraiz" value="raiz"> | 
+                <label for="icubo">Cubo: </label>
+                <input type="radio" name="calc" id="icubo" value="cubo">
+            </fieldset>
+
+            <input type="submit" class="botao" value="Calcular">
+        </form>
+    </div>
+</body>
+</html>
