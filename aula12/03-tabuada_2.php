@@ -10,7 +10,7 @@
 <body>
     <div>
         <?php
-            $n = $_GET["num"];
+            $n = isset($_GET["num"]) ? $_GET["num"] : 0;
             echo "<h1>Mostrando a Tabuada do $n:</h1>";
             $c = 1;
 
