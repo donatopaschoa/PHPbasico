@@ -11,12 +11,11 @@
     <div>
         <?php
             function soma($a, $b) {
-                $s = $a + $b;
-                return $s;
+                return $a + $b;
             }
 
             $x = 2;
-            $y = 3;
+            $y = 5;
 
             echo "A soma entre $x e $y é " .soma($x, $y);
         ?>
