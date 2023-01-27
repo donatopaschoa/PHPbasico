@@ -12,13 +12,13 @@
         <?php
             function soma($a, $b) {
                 $s = $a + $b;
-                echo "<p> A soma de $a + $b vale $s</p>";
+                return $s;
             }
 
-            soma(5, 7);
-            $x = 1;
-            $y = 2;
-            soma($x, $y)
+            $x = 2;
+            $y = 3;
+
+            echo "A soma entre $x e $y é " .soma($x, $y);
         ?>
     </div>
 </body>
