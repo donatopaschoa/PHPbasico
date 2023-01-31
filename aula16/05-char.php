@@ -9,7 +9,7 @@
 </head>
 <body>
     <div>
-        <h2>Listagem de caracteres: <br>char(n), núm > caracteres<br></h2>
+        <h2>Listagem de caracteres: <br>char(n), núm > caracteres:<br></h2>
         <ul>
         <?php
             for($i=35; $i<=103; $i++){
