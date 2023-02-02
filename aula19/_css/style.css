@@ -1,0 +1,54 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    line-height: 1.5em; /* espaçamento entre as linhas */
+}
+
+body {
+    background-image: url(../imagens/img-fundo.png);
+}
+
+div {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    padding: 10px;
+    background-color: white;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+input.botao {
+    background-color: rgb(49, 48, 48);
+    color: white;
+    padding: 3px;
+    border: none;
+    box-shadow: 2px 2px 2px rgb(121, 119, 119);
+}
+
+a.botao {
+    text-decoration: none;
+    background-color: rgb(49, 48, 48);
+    color: white;
+    padding: 3px;
+    border: none;
+    box-shadow: 2px 2px 2px rgb(121, 119, 119);   
+}
+a.botao:hover {
+    text-decoration: underline;
+    background-color: rgb(49, 48, 48);
+    color: white;
+    padding: 3px;
+    border: none;
+    box-shadow: 2px 2px 2px rgb(121, 119, 119);      
+}
+
+span.foco {
+    color: darkred;
+    font-weight: bold;
+}
+ul {
+    columns: 5;
+    list-style-type: none;
+}
