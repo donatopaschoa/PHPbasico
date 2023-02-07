@@ -26,6 +26,9 @@
                 foreach($lst as $v){
                     echo ucfirst($v) ." ";
                 }
+                echo "<br>";
+                // Usando "ucwords": >> Donato Paschoa Amezaga
+                echo ucwords($texto);
             ?>
         </pre>
     </div>
